@@ -1,0 +1,8 @@
+.match_button {
+    color: var(--amz_white);
+    font-size: 20px;
+
+    &:focus {
+        color: var(--amz_orange);
+    }
+}

@@ -1,0 +1,8 @@
+$border-width: 2px;
+$navbar-dark-toggler-border-color: var(--amz_white);
+
+$theme-colors: (
+    "primary": #232f3e
+);
+
+@import "~bootstrap/scss/bootstrap";

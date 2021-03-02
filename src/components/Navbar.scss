@@ -1,0 +1,20 @@
+.navbar_main {
+    color: var(--amz_white); 
+    background-color: var(--amz_gray);
+}
+
+.navbar_brand {
+    margin-left: 3vw;
+
+    @media screen and (min-width: 600px) {
+        margin-left: 50px;
+    }
+}
+
+.navbar_links {
+    margin-right: 1vw;
+
+    @media screen and (min-width: 600px) {
+        margin-right: 50px;
+    }
+}

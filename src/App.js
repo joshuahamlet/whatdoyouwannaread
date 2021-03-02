@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Switch, Route, useLocation } from 'react-router-dom'
+import NavbarTitle from './components/Navbar'
+import Landing from './components/Landing'
+import SwipeDeck from './components/SwipeDeck'
+import Matches from './components/Matches'
+import Login from './components/Login'
+import { AnimatePresence } from 'framer-motion';
+import AuthContextProvider from './contexts/authContext'
 
 function App() {
+  
+  const location = useLocation()
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthContextProvider>
+        <NavbarTitle/>
+
+        <div className="App-body">
+          <AnimatePresence exitBeforeEnter>
+            <Switch location={location} key={location.key}>
+              <Route path='/' exact component={Landing} />
+              <Route path='/Login' component={Login} />
+              <Route path='/startswiping' component={SwipeDeck} />
+              <Route path='/matches' component={Matches} />
+            </Switch>
+          </AnimatePresence>
+        </div>
+
+
+
+        </AuthContextProvider>
     </div>
   );
 }

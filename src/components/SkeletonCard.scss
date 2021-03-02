@@ -1,0 +1,40 @@
+.skeleton-card {
+    color: black;
+    height: 500px;
+    width: 329px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.bgAnimation {
+    border: none;
+    animation: example .75s infinite;
+
+    @keyframes example {
+        0%   {background-color: var(--amz_white);}
+        40%   {background-color: var(--amz_white_drk);}
+        50%  {background-color: var(--amz_white_drk);}
+        60%   {background-color: var(--amz_white_drk);}
+        70% {background-color: var(--amz_white);}
+        100% {background-color: var(--amz_white);}
+    } 
+}
+
+.loaderAnimation {
+    color: var(--amz_gray_lgt);
+    font-size: 125px;
+    animation: loader 2s linear infinite;
+
+    @keyframes loader {
+        0% {}
+        100% {transform: rotate(360deg);}
+    }
+
+    @-webkit-keyframes loader {
+        0% {}
+        100% {-webkit-transform: rotate(360deg);}
+    }
+}

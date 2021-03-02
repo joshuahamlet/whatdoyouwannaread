@@ -1,0 +1,55 @@
+.test::-webkit-scrollbar {
+    width: 11px;
+}
+  
+.test {
+    scrollbar-width: thin;
+    scrollbar-color: var(--amz_black) var(--amz_gray_lgt);
+    background-color: var(--amz_gray_lgt);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.test::-webkit-scrollbar-track {
+  background: var(--amz_gray_lgt);
+}
+
+.test::-webkit-scrollbar-thumb {
+  background-color: var(--amz_black) ;
+  border-radius: 6px;
+  border: 3px solid var(--amz_gray_lgt);
+}
+
+.mc-input {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 15px;
+    align-items: center;
+    font-size: 22px;
+}
+
+.input-button {
+    border-radius: 100px;
+    margin-left: 7px;
+    border: none;
+    outline: none;
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: var(--amz_black);
+    transform: translateY(0px);
+        transition: .5s;
+
+    &:hover {
+        transform: translateY(-2px);
+        transition: .5s;
+    }
+}
+
+.input-button-icon {
+    font-size: 27px;
+    transform: translate(1px, -1px);
+    color: var(--amz_white);
+}

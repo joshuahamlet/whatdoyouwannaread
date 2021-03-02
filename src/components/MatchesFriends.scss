@@ -1,0 +1,31 @@
+.loaded {
+    width: 50px;
+    height: 75px; 
+    margin-right: 20px;
+    border-radius: calc(0.25rem - 1px);
+    border: none;
+    // animation: loaded 1s;
+
+    // @keyframes loaded {
+    //     0% {filter: grayscale(100%);}
+    //     100%  {filter: grayscale(0%);}
+    // }
+}
+
+.loading {
+    width: 50px;
+    height: 75px; 
+    margin-right: 20px; 
+    border-radius: 5px;
+    border: none;
+    // animation: loading .75s infinite;
+
+    // @keyframes loading {
+    //     0%   {background-color: var(--amz_white);}
+    //     40%   {background-color: var(--amz_white_drk);}
+    //     50%  {background-color: var(--amz_white_drk);}
+    //     60%   {background-color: var(--amz_white_drk);}
+    //     70% {background-color: var(--amz_white);}
+    //     100% {background-color: var(--amz_white);}
+    // } 
+}

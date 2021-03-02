@@ -1,0 +1,13 @@
+.bgAnimation {
+    border: none;
+    animation: example .75s infinite;
+
+    @keyframes example {
+        0%   {background-color: var(--amz_white);}
+        40%   {background-color: var(--amz_white_drk);}
+        50%  {background-color: var(--amz_white_drk);}
+        60%   {background-color: var(--amz_white_drk);}
+        70% {background-color: var(--amz_white);}
+        100% {background-color: var(--amz_white);}
+    } 
+}
